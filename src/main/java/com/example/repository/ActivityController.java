@@ -74,6 +74,7 @@ public class ActivityController {
     @Consumes("application/json")
     @Produces({"application/json","application/xml"})
     public ActivityModel createActivityWithObj(ActivityModel object){
+        activityResource.addActivity(object);
         return object;
     }
 
